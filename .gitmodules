@@ -1,0 +1,3 @@
+[submodule "app/src/main/cpp/VknConfig_SubModule"]
+	path = app/src/main/cpp/VknConfig_SubModule
+	url = https://github.com/nmoehring/VknConfig.git
