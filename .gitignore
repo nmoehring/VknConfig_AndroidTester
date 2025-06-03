@@ -1,15 +1,64 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+gitignore
+# IDE files (IntelliJ IDEA / Android Studio)
+.idea/
+# Note: Some people prefer to commit .idea/codeStyles/ and .idea/scopes/
+# if they want to share code style and scope settings across the team.
+# This is a team decision. For a "quick and easy setup" for an individual
+# or a public test project, ignoring the whole .idea/ is usually fine.
+
+# Build files
+build/
+.gradle/
+
+# Local configuration files (IMPORTANT: often contains SDK paths or API keys)
 local.properties
+
+# Android Studio generated files
+*.iml
+*.apk
+*.aab
+*.ap_
+*.aarm
+*.jar
+*.aar # Unless it's a prebuilt library you are intentionally committing
+
+# Debug keystores (NEVER commit your release keystores)
+debug.keystore
+*.jks # Be careful with this, only if they are debug/temporary
+
+# C/C++ NDK related build artifacts
+.cxx/
+**/cmake-build-*/ # CLion specific CMake build outputs
+*.o
+*.so # Unless it's a prebuilt library you are intentionally committing
+*.a  # Unless it's a prebuilt library you are intentionally committing
+
+# Gradle build outputs and caches
+**/build/
+*~
+*.orig
+*.bak
+
+# Android Studio Profiler files
+*.hprof
+*.snapshot
+captures/
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store # macOS
+Thumbs.db # Windows
+ehthumbs.db # Windows
+
+# Node.js dependencies (if you use any JS tools like React Native, Cordova, etc.)
+# node_modules/
+
+# Cocoapods (if you have iOS parts in a KMP project)
+# Pods/
+
+# User-specific files
+.idea/workspace.xml
+.idea/shelf/
+.idea/tasks.xml
