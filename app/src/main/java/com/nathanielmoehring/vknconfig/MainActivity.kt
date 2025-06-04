@@ -54,19 +54,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    /**
-     * A native method that is implemented by the 'vknconfig' native library,
-     * which is packaged with this application.
-     */
-    //external fun stringFromJNI(): String
-
-    companion object {
-        // Used to load the 'vknconfig' library on application startup.
-        init {
-            System.loadLibrary("vknconfig")
-        }
-    }
-
     @Composable
     fun VulkanTesterScreen() {
         val context = LocalContext.current

@@ -1,7 +1,7 @@
 # For more information about using CMake with Android Studio, read the
 # documentation: https://d.android.com/studio/projects/add-native-code.html.
 # For more examples on how to use CMake, see https://github.com/android/ndk-samples.
-cmake_minimum_required(VERSION 3.30)
+cmake_minimum_required(VERSION 3.22)
 
 project("VknConfig" LANGUAGES CXX)
 
@@ -30,8 +30,6 @@ project("VknConfig" LANGUAGES CXX)
 # Add your VknConfig library as a subdirectory.
 # This assumes VknConfig/CMakeLists.txt defines a library target (e.g., VknConfigLib).
 add_subdirectory(VknConfig_SubModule) # Path relative to this CMakeLists.txt
-
-target_sources(VknConfig PRIVATE ${CMAKE_CURRENT_LIST_DIR}/native-lib.cpp
 
 # --- Android System Libraries ---
 # For __android_log_print (logging)

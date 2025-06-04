@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.compose.compiler)
 }
 
 android {
@@ -9,7 +10,7 @@ android {
 
     defaultConfig {
         // IMPORTANT: Change this to your unique application ID
-        applicationId = "com.example.vknconfigtester"
+        applicationId = "com.nathanielmoehring.vknconfigtester"
         minSdk = 29 // Vulkan 1.1 core features are available from API 29.
         // Android Baseline Profile 2022 guarantees Vulkan 1.1.
         targetSdk = 35

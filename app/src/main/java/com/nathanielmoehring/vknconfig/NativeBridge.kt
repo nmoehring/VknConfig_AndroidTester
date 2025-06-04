@@ -5,7 +5,7 @@ import android.view.Surface
 object NativeBridge { // Using an object for a singleton-like utility
     init {
         // Must match the project_name in app/src/main/cpp/CMakeLists.txt
-        System.loadLibrary("vknconfig_tester")
+        System.loadLibrary("VknConfig")
     }
 
     // External functions are Kotlin's way of declaring JNI methods
